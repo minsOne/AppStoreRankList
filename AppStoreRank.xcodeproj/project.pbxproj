@@ -1,0 +1,492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BE99641B220E6ABC54572DE /* Pods_AppStoreRank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7ED2CE95B27C057DC23AADF0 /* Pods_AppStoreRank.framework */; };
+		CB1A8FDA1D75C7CC008169B2 /* MOScreenShotListCollectionViewShim.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1A8FD91D75C7CC008169B2 /* MOScreenShotListCollectionViewShim.swift */; };
+		CB29F4671D7098EE005C2DCC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4661D7098EE005C2DCC /* AppDelegate.swift */; };
+		CB29F46C1D7098EE005C2DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB29F46A1D7098EE005C2DCC /* Main.storyboard */; };
+		CB29F46E1D7098EE005C2DCC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB29F46D1D7098EE005C2DCC /* Assets.xcassets */; };
+		CB29F4711D7098EE005C2DCC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB29F46F1D7098EE005C2DCC /* LaunchScreen.storyboard */; };
+		CB29F47B1D70A078005C2DCC /* MOAppRankListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F47A1D70A078005C2DCC /* MOAppRankListViewController.swift */; };
+		CB29F47D1D70A086005C2DCC /* MOAppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F47C1D70A086005C2DCC /* MOAppDetailViewController.swift */; };
+		CB29F4801D70A119005C2DCC /* MOAppRankListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F47E1D70A119005C2DCC /* MOAppRankListCell.swift */; };
+		CB29F4811D70A119005C2DCC /* MOAppRankListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB29F47F1D70A119005C2DCC /* MOAppRankListCell.xib */; };
+		CB29F4841D70A4E4005C2DCC /* MOAppDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4821D70A4E4005C2DCC /* MOAppDetailTitleCell.swift */; };
+		CB29F4851D70A4E4005C2DCC /* MOAppDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB29F4831D70A4E4005C2DCC /* MOAppDetailTitleCell.xib */; };
+		CB29F4881D70A4FB005C2DCC /* MOAppDetailScreenShotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4861D70A4FB005C2DCC /* MOAppDetailScreenShotCell.swift */; };
+		CB29F4891D70A4FB005C2DCC /* MOAppDetailScreenShotCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB29F4871D70A4FB005C2DCC /* MOAppDetailScreenShotCell.xib */; };
+		CB29F48B1D70A511005C2DCC /* MOAppDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F48A1D70A511005C2DCC /* MOAppDetailDescriptionCell.swift */; };
+		CB29F48F1D71C381005C2DCC /* MOAppRankListTableViewShim.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F48E1D71C381005C2DCC /* MOAppRankListTableViewShim.swift */; };
+		CB29F4911D71C672005C2DCC /* TableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4901D71C672005C2DCC /* TableViewModel.swift */; };
+		CB29F4931D71D4BE005C2DCC /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4921D71D4BE005C2DCC /* Extension.swift */; };
+		CB29F4951D71D94D005C2DCC /* MOAppRankListViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4941D71D94D005C2DCC /* MOAppRankListViewController+ViewModel.swift */; };
+		CB29F4981D71DA3B005C2DCC /* MOITunesAppRankNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4971D71DA3B005C2DCC /* MOITunesAppRankNetworkRequest.swift */; };
+		CB29F49B1D73FA5E005C2DCC /* MOAppDetailTableViewShim.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F49A1D73FA5E005C2DCC /* MOAppDetailTableViewShim.swift */; };
+		CB29F49D1D740ECE005C2DCC /* MOAppDetailViewController+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F49C1D740ECE005C2DCC /* MOAppDetailViewController+ViewModel.swift */; };
+		CB29F4A01D745C42005C2DCC /* MOAppDetailScreenShotImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F49E1D745C42005C2DCC /* MOAppDetailScreenShotImageCell.swift */; };
+		CB29F4A11D745C42005C2DCC /* MOAppDetailScreenShotImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB29F49F1D745C42005C2DCC /* MOAppDetailScreenShotImageCell.xib */; };
+		CB29F4A31D747ADB005C2DCC /* MOAppDetailDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB29F4A21D747ADB005C2DCC /* MOAppDetailDescriptionCell.xib */; };
+		CB29F4A61D749418005C2DCC /* MOScreenShotListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB29F4A51D749418005C2DCC /* MOScreenShotListViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7ED2CE95B27C057DC23AADF0 /* Pods_AppStoreRank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppStoreRank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA2B99876899ABD70EC5EDD2 /* Pods_TopFreeRankAppStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TopFreeRankAppStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C872B46D91326D37FFE81AFB /* Pods-AppStoreRank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreRank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreRank/Pods-AppStoreRank.debug.xcconfig"; sourceTree = "<group>"; };
+		CB1A8FD91D75C7CC008169B2 /* MOScreenShotListCollectionViewShim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOScreenShotListCollectionViewShim.swift; sourceTree = "<group>"; };
+		CB29F4631D7098EE005C2DCC /* AppStoreRank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreRank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB29F4661D7098EE005C2DCC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB29F46B1D7098EE005C2DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB29F46D1D7098EE005C2DCC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB29F4701D7098EE005C2DCC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB29F4721D7098EE005C2DCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB29F47A1D70A078005C2DCC /* MOAppRankListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppRankListViewController.swift; sourceTree = "<group>"; };
+		CB29F47C1D70A086005C2DCC /* MOAppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppDetailViewController.swift; sourceTree = "<group>"; };
+		CB29F47E1D70A119005C2DCC /* MOAppRankListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppRankListCell.swift; sourceTree = "<group>"; };
+		CB29F47F1D70A119005C2DCC /* MOAppRankListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOAppRankListCell.xib; sourceTree = "<group>"; };
+		CB29F4821D70A4E4005C2DCC /* MOAppDetailTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppDetailTitleCell.swift; sourceTree = "<group>"; };
+		CB29F4831D70A4E4005C2DCC /* MOAppDetailTitleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOAppDetailTitleCell.xib; sourceTree = "<group>"; };
+		CB29F4861D70A4FB005C2DCC /* MOAppDetailScreenShotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppDetailScreenShotCell.swift; sourceTree = "<group>"; };
+		CB29F4871D70A4FB005C2DCC /* MOAppDetailScreenShotCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOAppDetailScreenShotCell.xib; sourceTree = "<group>"; };
+		CB29F48A1D70A511005C2DCC /* MOAppDetailDescriptionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppDetailDescriptionCell.swift; sourceTree = "<group>"; };
+		CB29F48E1D71C381005C2DCC /* MOAppRankListTableViewShim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppRankListTableViewShim.swift; sourceTree = "<group>"; };
+		CB29F4901D71C672005C2DCC /* TableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewModel.swift; sourceTree = "<group>"; };
+		CB29F4921D71D4BE005C2DCC /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		CB29F4941D71D94D005C2DCC /* MOAppRankListViewController+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MOAppRankListViewController+ViewModel.swift"; sourceTree = "<group>"; };
+		CB29F4971D71DA3B005C2DCC /* MOITunesAppRankNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOITunesAppRankNetworkRequest.swift; sourceTree = "<group>"; };
+		CB29F49A1D73FA5E005C2DCC /* MOAppDetailTableViewShim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppDetailTableViewShim.swift; sourceTree = "<group>"; };
+		CB29F49C1D740ECE005C2DCC /* MOAppDetailViewController+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MOAppDetailViewController+ViewModel.swift"; sourceTree = "<group>"; };
+		CB29F49E1D745C42005C2DCC /* MOAppDetailScreenShotImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOAppDetailScreenShotImageCell.swift; sourceTree = "<group>"; };
+		CB29F49F1D745C42005C2DCC /* MOAppDetailScreenShotImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOAppDetailScreenShotImageCell.xib; sourceTree = "<group>"; };
+		CB29F4A21D747ADB005C2DCC /* MOAppDetailDescriptionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MOAppDetailDescriptionCell.xib; sourceTree = "<group>"; };
+		CB29F4A51D749418005C2DCC /* MOScreenShotListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MOScreenShotListViewController.swift; sourceTree = "<group>"; };
+		D667244C8B4C4220C05D35F4 /* Pods-AppStoreRank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppStoreRank.release.xcconfig"; path = "Pods/Target Support Files/Pods-AppStoreRank/Pods-AppStoreRank.release.xcconfig"; sourceTree = "<group>"; };
+		E6F939662F04DD98C57E6136 /* Pods-TopFreeRankAppStore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopFreeRankAppStore.release.xcconfig"; path = "Pods/Target Support Files/Pods-TopFreeRankAppStore/Pods-TopFreeRankAppStore.release.xcconfig"; sourceTree = "<group>"; };
+		E82B04AB96BC6A5EE2B2035C /* Pods-TopFreeRankAppStore.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TopFreeRankAppStore.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TopFreeRankAppStore/Pods-TopFreeRankAppStore.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB29F4601D7098EE005C2DCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BE99641B220E6ABC54572DE /* Pods_AppStoreRank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B4797368085C14A89DEA7027 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E82B04AB96BC6A5EE2B2035C /* Pods-TopFreeRankAppStore.debug.xcconfig */,
+				E6F939662F04DD98C57E6136 /* Pods-TopFreeRankAppStore.release.xcconfig */,
+				C872B46D91326D37FFE81AFB /* Pods-AppStoreRank.debug.xcconfig */,
+				D667244C8B4C4220C05D35F4 /* Pods-AppStoreRank.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CB29F45A1D7098EE005C2DCC = {
+			isa = PBXGroup;
+			children = (
+				CB29F4651D7098EE005C2DCC /* AppStoreRank */,
+				CB29F4641D7098EE005C2DCC /* Products */,
+				B4797368085C14A89DEA7027 /* Pods */,
+				E956EB07BB8337598D9F940D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB29F4641D7098EE005C2DCC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB29F4631D7098EE005C2DCC /* AppStoreRank.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB29F4651D7098EE005C2DCC /* AppStoreRank */ = {
+			isa = PBXGroup;
+			children = (
+				CB29F4661D7098EE005C2DCC /* AppDelegate.swift */,
+				CB29F46A1D7098EE005C2DCC /* Main.storyboard */,
+				CB29F48C1D70A53D005C2DCC /* TopFreeRank */,
+				CB29F48D1D70A545005C2DCC /* TopFreeRankDetail */,
+				CB29F4A41D749339005C2DCC /* ScreenShot */,
+				CB29F4961D71D9FC005C2DCC /* Network */,
+				CB29F4921D71D4BE005C2DCC /* Extension.swift */,
+				CB29F46D1D7098EE005C2DCC /* Assets.xcassets */,
+				CB29F46F1D7098EE005C2DCC /* LaunchScreen.storyboard */,
+				CB29F4721D7098EE005C2DCC /* Info.plist */,
+			);
+			name = AppStoreRank;
+			path = TopFreeRankAppStore;
+			sourceTree = "<group>";
+		};
+		CB29F48C1D70A53D005C2DCC /* TopFreeRank */ = {
+			isa = PBXGroup;
+			children = (
+				CB29F47A1D70A078005C2DCC /* MOAppRankListViewController.swift */,
+				CB29F4941D71D94D005C2DCC /* MOAppRankListViewController+ViewModel.swift */,
+				CB29F48E1D71C381005C2DCC /* MOAppRankListTableViewShim.swift */,
+				CB29F47E1D70A119005C2DCC /* MOAppRankListCell.swift */,
+				CB29F47F1D70A119005C2DCC /* MOAppRankListCell.xib */,
+				CB29F4901D71C672005C2DCC /* TableViewModel.swift */,
+			);
+			name = TopFreeRank;
+			sourceTree = "<group>";
+		};
+		CB29F48D1D70A545005C2DCC /* TopFreeRankDetail */ = {
+			isa = PBXGroup;
+			children = (
+				CB29F47C1D70A086005C2DCC /* MOAppDetailViewController.swift */,
+				CB29F49C1D740ECE005C2DCC /* MOAppDetailViewController+ViewModel.swift */,
+				CB29F49A1D73FA5E005C2DCC /* MOAppDetailTableViewShim.swift */,
+				CB29F4821D70A4E4005C2DCC /* MOAppDetailTitleCell.swift */,
+				CB29F4831D70A4E4005C2DCC /* MOAppDetailTitleCell.xib */,
+				CB29F4861D70A4FB005C2DCC /* MOAppDetailScreenShotCell.swift */,
+				CB29F4871D70A4FB005C2DCC /* MOAppDetailScreenShotCell.xib */,
+				CB29F48A1D70A511005C2DCC /* MOAppDetailDescriptionCell.swift */,
+				CB29F4A21D747ADB005C2DCC /* MOAppDetailDescriptionCell.xib */,
+				CB29F49E1D745C42005C2DCC /* MOAppDetailScreenShotImageCell.swift */,
+				CB29F49F1D745C42005C2DCC /* MOAppDetailScreenShotImageCell.xib */,
+			);
+			name = TopFreeRankDetail;
+			sourceTree = "<group>";
+		};
+		CB29F4961D71D9FC005C2DCC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CB29F4971D71DA3B005C2DCC /* MOITunesAppRankNetworkRequest.swift */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		CB29F4A41D749339005C2DCC /* ScreenShot */ = {
+			isa = PBXGroup;
+			children = (
+				CB29F4A51D749418005C2DCC /* MOScreenShotListViewController.swift */,
+				CB1A8FD91D75C7CC008169B2 /* MOScreenShotListCollectionViewShim.swift */,
+			);
+			name = ScreenShot;
+			sourceTree = "<group>";
+		};
+		E956EB07BB8337598D9F940D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA2B99876899ABD70EC5EDD2 /* Pods_TopFreeRankAppStore.framework */,
+				7ED2CE95B27C057DC23AADF0 /* Pods_AppStoreRank.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB29F4621D7098EE005C2DCC /* AppStoreRank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB29F4751D7098EE005C2DCC /* Build configuration list for PBXNativeTarget "AppStoreRank" */;
+			buildPhases = (
+				95D7A38C24EDB91B191622CE /* Check Pods Manifest.lock */,
+				CB29F45F1D7098EE005C2DCC /* Sources */,
+				CB29F4601D7098EE005C2DCC /* Frameworks */,
+				CB29F4611D7098EE005C2DCC /* Resources */,
+				1EC7735EDA221E9E14CE3122 /* Embed Pods Frameworks */,
+				BE9FCA81C003BA731725DED4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppStoreRank;
+			productName = TopFreeRankAppStore;
+			productReference = CB29F4631D7098EE005C2DCC /* AppStoreRank.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB29F45B1D7098EE005C2DCC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MO;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "JungMin Ahn";
+				TargetAttributes = {
+					CB29F4621D7098EE005C2DCC = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = CB29F45E1D7098EE005C2DCC /* Build configuration list for PBXProject "AppStoreRank" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB29F45A1D7098EE005C2DCC;
+			productRefGroup = CB29F4641D7098EE005C2DCC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB29F4621D7098EE005C2DCC /* AppStoreRank */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB29F4611D7098EE005C2DCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB29F4A11D745C42005C2DCC /* MOAppDetailScreenShotImageCell.xib in Resources */,
+				CB29F4711D7098EE005C2DCC /* LaunchScreen.storyboard in Resources */,
+				CB29F4851D70A4E4005C2DCC /* MOAppDetailTitleCell.xib in Resources */,
+				CB29F4811D70A119005C2DCC /* MOAppRankListCell.xib in Resources */,
+				CB29F46E1D7098EE005C2DCC /* Assets.xcassets in Resources */,
+				CB29F4A31D747ADB005C2DCC /* MOAppDetailDescriptionCell.xib in Resources */,
+				CB29F4891D70A4FB005C2DCC /* MOAppDetailScreenShotCell.xib in Resources */,
+				CB29F46C1D7098EE005C2DCC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC7735EDA221E9E14CE3122 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppStoreRank/Pods-AppStoreRank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95D7A38C24EDB91B191622CE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE9FCA81C003BA731725DED4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AppStoreRank/Pods-AppStoreRank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB29F45F1D7098EE005C2DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB29F4A01D745C42005C2DCC /* MOAppDetailScreenShotImageCell.swift in Sources */,
+				CB29F49B1D73FA5E005C2DCC /* MOAppDetailTableViewShim.swift in Sources */,
+				CB29F4801D70A119005C2DCC /* MOAppRankListCell.swift in Sources */,
+				CB29F48B1D70A511005C2DCC /* MOAppDetailDescriptionCell.swift in Sources */,
+				CB29F4A61D749418005C2DCC /* MOScreenShotListViewController.swift in Sources */,
+				CB29F48F1D71C381005C2DCC /* MOAppRankListTableViewShim.swift in Sources */,
+				CB29F4841D70A4E4005C2DCC /* MOAppDetailTitleCell.swift in Sources */,
+				CB29F47B1D70A078005C2DCC /* MOAppRankListViewController.swift in Sources */,
+				CB29F49D1D740ECE005C2DCC /* MOAppDetailViewController+ViewModel.swift in Sources */,
+				CB29F4931D71D4BE005C2DCC /* Extension.swift in Sources */,
+				CB29F4671D7098EE005C2DCC /* AppDelegate.swift in Sources */,
+				CB1A8FDA1D75C7CC008169B2 /* MOScreenShotListCollectionViewShim.swift in Sources */,
+				CB29F4911D71C672005C2DCC /* TableViewModel.swift in Sources */,
+				CB29F47D1D70A086005C2DCC /* MOAppDetailViewController.swift in Sources */,
+				CB29F4881D70A4FB005C2DCC /* MOAppDetailScreenShotCell.swift in Sources */,
+				CB29F4981D71DA3B005C2DCC /* MOITunesAppRankNetworkRequest.swift in Sources */,
+				CB29F4951D71D94D005C2DCC /* MOAppRankListViewController+ViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB29F46A1D7098EE005C2DCC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB29F46B1D7098EE005C2DCC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB29F46F1D7098EE005C2DCC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB29F4701D7098EE005C2DCC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB29F4731D7098EE005C2DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB29F4741D7098EE005C2DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB29F4761D7098EE005C2DCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C872B46D91326D37FFE81AFB /* Pods-AppStoreRank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TopFreeRankAppStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -DDEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.AppStoreRank;
+				PRODUCT_NAME = AppStoreRank;
+			};
+			name = Debug;
+		};
+		CB29F4771D7098EE005C2DCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D667244C8B4C4220C05D35F4 /* Pods-AppStoreRank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TopFreeRankAppStore/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.minsone.AppStoreRank;
+				PRODUCT_NAME = AppStoreRank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB29F45E1D7098EE005C2DCC /* Build configuration list for PBXProject "AppStoreRank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB29F4731D7098EE005C2DCC /* Debug */,
+				CB29F4741D7098EE005C2DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB29F4751D7098EE005C2DCC /* Build configuration list for PBXNativeTarget "AppStoreRank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB29F4761D7098EE005C2DCC /* Debug */,
+				CB29F4771D7098EE005C2DCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB29F45B1D7098EE005C2DCC /* Project object */;
+}

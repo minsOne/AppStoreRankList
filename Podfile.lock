@@ -1,0 +1,49 @@
+PODS:
+  - Alamofire (3.4.2)
+  - HCSStarRatingView (1.4.5)
+  - HTTPStatusCodes (2.0.3)
+  - Kingfisher (2.5.0)
+  - RxAlamofire (2.5):
+    - RxAlamofire/Core (= 2.5)
+  - RxAlamofire/Core (2.5):
+    - Alamofire (~> 3.4)
+    - RxSwift (~> 2.5)
+  - RxCocoa (2.6.0):
+    - RxSwift (~> 2.5)
+  - RxDataSources (0.9):
+    - RxCocoa (~> 2.2)
+    - RxSwift (~> 2.2)
+  - RxSwift (2.6.0)
+  - SwiftyJSON (2.3.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - HCSStarRatingView
+  - HTTPStatusCodes (~> 2.0.0)
+  - Kingfisher (~> 2.4)
+  - RxAlamofire
+  - RxDataSources
+  - RxSwift (= 2.6.0)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 73670b94292b8d8496c398a973f56ac67789ba9f
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: 6aa33201d20d069e1598891cf928883ff1888c7a
+  HCSStarRatingView: bff3f89314d3b5013ce826ea11897d3129ff6b8c
+  HTTPStatusCodes: d5d6d9a0aed88769af4fa59f3bddd39b33131494
+  Kingfisher: d467bd710907ec9aa94aaddecaa5390aa3559819
+  RxAlamofire: b4572a077b6b2410c8732a27266299df4c00736e
+  RxCocoa: 89ab00d5753502520227940e3a0e0a0413683c6b
+  RxDataSources: e169bba94a7be584df7c1e1487fa56edc8753ae6
+  RxSwift: 77f3a0b15324baa7a1c9bfa9f199648a82424e26
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+
+COCOAPODS: 0.39.0
