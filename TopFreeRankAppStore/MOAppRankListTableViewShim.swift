@@ -67,6 +67,19 @@ extension MOAppRankListTableViewShim {
     func reloadTableView() {
         self.tableView.reloadData()
     }
+
+    func hideErrorMessage() {
+        self.tableView.hidden = false
+        self.errorLabel?.hidden = true
+    }
+
+    func showErrorMessage(msg: String) {
+        self.tableView.hidden = true
+        self.errorLabel?.hidden = false
+        self.errorLabel?.text = msg
+        self.errorLabel?.sizeToFit()
+        self.delegate?.layoutIfNeeded()
+    }
 }
 
 extension MOAppRankListTableViewShim: UITableViewDelegate, UITableViewDataSource {
@@ -109,15 +122,11 @@ extension MOAppRankListTableViewShim {
             .subscribe(
                 onNext: { [unowned self] (viewModel) in
                     self.rankViewModel = viewModel
-                    self.errorLabel?.hidden = true
                     self.tableView.reloadData()
+                    self.hideErrorMessage()
                 },
                 onError: { (error) in
-                    self.tableView.hidden = true
-                    self.errorLabel?.hidden = false
-                    self.errorLabel?.text = (error as NSError).localizedDescription
-                    self.errorLabel?.sizeToFit()
-                    self.delegate?.layoutIfNeeded()
+                    self.showErrorMessage((error as NSError).localizedDescription)
                 },
                 onCompleted: nil,
                 onDisposed: nil)
